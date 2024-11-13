@@ -8,7 +8,7 @@ function App() {
   const [questions, setQuestions] = useState([]);
 
   function handleAddQuestion(newQuestion) {
-    setQuestions([...questions, newQuestion]);
+    setQuestions((prevQuestions) => [...prevQuestions, newQuestion]);
   }
 
   return (
